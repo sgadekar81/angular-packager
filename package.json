@@ -16,8 +16,7 @@
         "rm:nm": "rm -rf node_modules",
         "rm:dist": "rm -rf dist",
         "rm:gens": "npm run rm:nm && npm run rm:dist",
-        "link:dist:pk": "cd dist && npm link",
-        "jb:init": "rm -rf .git && node jb-init.js && rm -rf gitignore.txt"
+        "link:dist:pk": "cd dist && npm link"
     },
     "devDependencies": {
         "@angular/common": "5.0.3",
