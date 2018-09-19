@@ -16,7 +16,8 @@
         "rm:nm": "rm -rf node_modules",
         "rm:dist": "rm -rf dist",
         "rm:gens": "npm run rm:nm && npm run rm:dist",
-        "link:dist:pk": "cd dist && npm link"
+        "link:dist:pk": "cd dist && npm link",
+        "install:dep": "npm i"
     },
     "devDependencies": {
         "@angular/common": "5.0.3",
