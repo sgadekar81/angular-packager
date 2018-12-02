@@ -1,33 +1,30 @@
 {
-    "name": "justbe-packager-starter",
-    "version": "0.0.1",
-    "description": "http package for justbe",
+    "name": "@justbe-super-classes/subscriptions",
+    "version": "1.0.0",
+    "description": "super classes for justbe",
     "main": "./index.umd.js",
     "module": "./index.js",
     "typings": "./index.d.ts",
-    "license": "MIT",
-    "author": "Sandip Gadekar",
     "scripts": {
         "ngc": "ngc",
-        "build:dev": "npm run ngc && node tasker.js ",
-        "build:prod": "npm run ngc && node tasker.js",
-        "build:prod:pb": "npm run ngc && node tasker.js && npm run publish:public",
-        "publish:public": "cd dist && npm publish --access public",
-        "rm:nm": "rm -rf node_modules",
-        "rm:dist": "rm -rf dist",
-        "rm:gens": "npm run rm:nm && npm run rm:dist",
-        "link:dist:pk": "cd dist && npm link",
-        "install:dep": "npm i"
+        "scope-public": "npm publish --access public",
+        "build": "npm run ngc && node custom-scripts",
+        "release": "npm run build && cd dist && npm run scope-public"
     },
     "devDependencies": {
         "@angular/common": "5.0.3",
         "@angular/compiler": "5.0.3",
         "@angular/compiler-cli": "5.0.3",
         "@angular/core": "5.0.3",
+        "@angular/forms": "^5.2.7",
         "@angular/platform-browser": "5.0.3",
         "@angular/platform-browser-dynamic": "5.0.3",
+        "@types/node": "^9.4.6",
+        "ionic-angular": "3.9.2",
         "rxjs": "5.5.2",
-        "zone.js": "0.8.18",
-        "typescript": "2.4.2"
-    }
+        "typescript": "2.4.2",
+        "zone.js": "0.8.18"
+    },
+    "author": "Sandip Gadekar",
+    "license": "ISC"
 }
